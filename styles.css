@@ -574,6 +574,14 @@ footer {
 
 /* ── MOBILE ── */
 @media (max-width: 768px) {
+  body::before {
+    display: none;
+  }
+
+  body::after {
+    right: 0;
+    box-shadow: none;
+  }
   /* hide desktop tabs */
   .tab-rail {
     display: none;
@@ -671,6 +679,7 @@ footer {
   }
 
   /* layout */
+
   .page {
     padding-right: 0;
   }
