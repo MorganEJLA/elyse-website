@@ -14,6 +14,7 @@
   --font-hand: "Neucha", cursive;
   --font-body: "Lora", serif;
   --font-type: "Courier Prime", monospace;
+  --font-display: "Rock Salt", cursive;
 }
 
 /* ── RESET ── */
@@ -66,7 +67,7 @@ body::after {
   top: 50%;
   transform: translateY(-50%) rotate(180deg);
   writing-mode: vertical-rl;
-  font-family: var(--font-hand);
+  font-family: var(--font-display);
   font-size: 26px;
   color: var(--ink);
   letter-spacing: 0.08em;
@@ -196,7 +197,7 @@ section:last-of-type {
 }
 
 .hero-name {
-  font-family: var(--font-hand);
+  font-family: var(--font-display);
   font-size: 88px;
   color: var(--ink);
   line-height: 0.85;
@@ -257,14 +258,6 @@ section:last-of-type {
 
 /* ── LISTEN ── */
 .player-box {
-  background: var(--parchment);
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-style: italic;
-  color: var(--muted);
-  font-size: 12px;
   margin-bottom: 14px;
   border-left: 3px solid var(--seafoam);
 }
@@ -353,7 +346,15 @@ section:last-of-type {
   height: 100%;
   border: none;
 }
+.embed-audio {
+  width: 100%;
+}
 
+.embed-audio iframe {
+  width: 100%;
+  border: none;
+  display: block;
+}
 .thumb-card {
   position: relative;
   display: block;
