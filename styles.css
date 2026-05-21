@@ -185,6 +185,19 @@ section:last-of-type {
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+.sec-h--listen {
+  background-color: rgba(122, 184, 176, 0.45);
+} /* seafoam */
+.sec-h--archive {
+  background-color: rgba(200, 151, 90, 0.45);
+} /* gold */
+.sec-h--about {
+  background-color: rgba(138, 154, 90, 0.45);
+} /* avocado */
+.sec-h--book {
+  background-color: rgba(224, 117, 88, 0.45);
+} /* coral */
+
 
 /* ── HERO ── */
 #hero {
