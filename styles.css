@@ -30,7 +30,7 @@ html {
 }
 
 body {
-  background: var(--cream);
+  background: var(--parchment);
   color: var(--ink);
   font-family: var(--font-body);
   min-height: 100vh;
@@ -198,7 +198,6 @@ section:last-of-type {
   background-color: rgba(224, 117, 88, 0.45);
 } /* coral */
 
-
 /* ── HERO ── */
 #hero {
   padding: 64px 32px 52px;
@@ -214,7 +213,7 @@ section:last-of-type {
   font-size: 88px;
   color: var(--ink);
   line-height: 0.85;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .hero-desc {
@@ -223,7 +222,7 @@ section:last-of-type {
   text-transform: uppercase;
   color: var(--muted);
   line-height: 2.4;
-  margin-bottom: 28px;
+  margin: 20px 28px;
 }
 
 .hero-cta {
@@ -727,5 +726,10 @@ footer {
   body::after {
     right: 0;
     box-shadow: none;
+  }
+}
+@media (max-width: 768px) {
+  .site-name {
+    display: none;
   }
 }
