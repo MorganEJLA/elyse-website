@@ -269,6 +269,7 @@ section:last-of-type {
 }
 
 /* ── LISTEN ── */
+
 .player-box {
   margin-bottom: 14px;
   border-left: 3px solid var(--seafoam);
@@ -297,7 +298,88 @@ section:last-of-type {
   border-color: var(--seafoam);
   color: var(--ink);
 }
+/* ── LISTEN PREVIEW GRID ── */
+.listen-preview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
 
+.preview-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.preview-platform {
+  font-family: "Courier Prime", monospace;
+  font-size: 0.625rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.preview-embed iframe {
+  width: 100%;
+  border: none;
+}
+
+/* ── POST-IT ── */
+.postit-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+
+.postit {
+  background: #f5e66e;
+  padding: 1rem 1.1rem 1.2rem;
+  border-radius: 2px;
+  transform: rotate(1.5deg);
+  position: relative;
+  box-shadow: 2px 2px 0 #d4c94a;
+  min-width: 140px;
+}
+
+.postit-tape {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-1deg);
+  width: 48px;
+  height: 14px;
+  background: rgba(180, 210, 200, 0.55);
+  border-radius: 1px;
+  border: 0.5px solid rgba(150, 185, 175, 0.4);
+}
+
+.postit-title {
+  font-family: "Neucha", cursive;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #5a4e1a;
+  margin-bottom: 0.6rem;
+  border-bottom: 1px solid #d4c94a;
+  padding-bottom: 0.3rem;
+}
+
+.postit-link {
+  font-family: "Neucha", cursive;
+  font-size: 0.95rem;
+  color: #3a3210;
+  display: block;
+  padding: 0.2rem 0;
+  text-decoration: none;
+  border-bottom: 0.5px solid rgba(180, 160, 30, 0.3);
+}
+
+.postit-link:last-child {
+  border-bottom: none;
+}
+.postit-link:hover {
+  color: #1a1a00;
+}
 /* ── ARCHIVE ── */
 .archive-grid {
   display: grid;
@@ -311,6 +393,154 @@ section:last-of-type {
   font-style: italic;
   margin-top: 20px;
   letter-spacing: 0.06em;
+}
+/* ── ARCHIVE ZIGZAG ── */
+.archive-intro {
+  font-family: "Lora", serif;
+  font-style: italic;
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin-bottom: 2rem;
+  max-width: 480px;
+}
+
+.arch-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: stretch;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 0.5px solid var(--rule);
+}
+
+.arch-row:last-of-type {
+  border-bottom: none;
+}
+
+.arch-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.arch-placeholder {
+  flex: 1;
+  min-height: 120px;
+  background: var(--cream);
+  border: 0.5px solid var(--rule);
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* torn top edge on placeholder */
+.arch-placeholder::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--parchment);
+  clip-path: polygon(
+    0% 0%,
+    2% 80%,
+    5% 15%,
+    8% 90%,
+    11% 10%,
+    14% 85%,
+    17% 20%,
+    20% 75%,
+    23% 5%,
+    27% 95%,
+    30% 15%,
+    33% 80%,
+    37% 10%,
+    40% 90%,
+    43% 20%,
+    46% 75%,
+    50% 5%,
+    53% 85%,
+    57% 25%,
+    60% 80%,
+    63% 10%,
+    67% 90%,
+    70% 15%,
+    73% 85%,
+    77% 5%,
+    80% 95%,
+    83% 20%,
+    87% 80%,
+    90% 10%,
+    93% 85%,
+    96% 15%,
+    100% 70%,
+    100% 0%
+  );
+}
+
+.arch-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0.25rem 0;
+}
+
+.arch-year {
+  font-family: "Lora", serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 0.5px solid var(--rule);
+}
+
+.arch-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.arch-links li::before {
+  content: "·";
+  color: var(--coral);
+  margin-right: 0.5rem;
+}
+
+.arch-links a {
+  font-family: "Lora", serif;
+  font-size: 0.8rem;
+  color: var(--ink);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+.arch-links a:hover {
+  text-decoration: underline;
+}
+
+.arch-platform {
+  font-family: "Courier Prime", monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 640px) {
+  .listen-preview-grid {
+    grid-template-columns: 1fr;
+  }
+  .arch-row {
+    grid-template-columns: 1fr;
+  }
+  .arch-row--flip .arch-card {
+    order: -1;
+  }
 }
 
 .media-card {

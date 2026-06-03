@@ -79,6 +79,8 @@
       <section id="listen">
         <div class="sec-num">01 · Listen</div>
         <div class="sec-h sec-h--listen">Listen</div>
+
+        <!-- Hero embed -->
         <div class="player-box">
           <iframe
             style="border: 0; width: 100%; height: 120px"
@@ -89,149 +91,296 @@
             ></iframe
           >
         </div>
-        <div class="stream-row">
-          <a href="#" class="pill">Bandcamp ↗</a>
-          <a href="#" class="pill">Spotify ↗</a>
-          <a href="#" class="pill">Apple Music ↗</a>
-          <a href="#" class="pill">YouTube ↗</a>
+
+        <!-- Three spotlight embeds -->
+        <div class="listen-preview-grid">
+          <div class="preview-card">
+            <div class="preview-platform">YouTube</div>
+            <div class="preview-embed">
+              <!-- YouTube iframe goes here -->
+            </div>
+          </div>
+          <div class="preview-card">
+            <div class="preview-platform">SoundCloud</div>
+            <div class="preview-embed">
+              <!-- SoundCloud iframe goes here -->
+            </div>
+          </div>
+          <div class="preview-card">
+            <div class="preview-platform">Bandcamp</div>
+            <div class="preview-embed">
+              <!-- Bandcamp iframe goes here -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Post-it -->
+        <div class="postit-wrap">
+          <div class="postit">
+            <div class="postit-tape"></div>
+            <div class="postit-title">find me here</div>
+            <a
+              href="https://elysemaister.bandcamp.com"
+              target="_blank"
+              rel="noopener"
+              class="postit-link"
+              >Bandcamp ↗</a
+            >
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noopener"
+              class="postit-link"
+              >YouTube ↗</a
+            >
+            <a
+              href="https://soundcloud.com"
+              target="_blank"
+              rel="noopener"
+              class="postit-link"
+              >SoundCloud ↗</a
+            >
+          </div>
         </div>
       </section>
+
       <section id="archive">
         <div class="sec-num">02 · Archive</div>
         <div class="sec-h">Archive</div>
-        <div class="archive-grid">
-          <div class="media-card">
-            <div class="embed-yt">
-              <iframe src="#" title="Late Bloomer" loading="lazy"></iframe>
-            </div>
-            <div class="card-meta">
-              <span class="arch-num">01</span>
-              <span class="arch-name">Project name</span>
-              <span class="arch-meta">Role · Year</span>
-            </div>
-          </div>
+        <p class="archive-intro">
+          A full catalog of recordings, collaborations, and performances from
+          2012 to present.
+        </p>
 
-          <div class="media-card">
-            <div class="embed-audio">
-              <iframe
-                style="border: 0; width: 100%; height: 200px"
-                src="https://bandcamp.com/EmbeddedPlayer/track=2843377864/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/transparent=true/"
-                seamless
-                loading="lazy"
-                title="Cast Off by Elyse Maister"
-              ></iframe>
-            </div>
-            <div class="card-meta">
-              <span class="arch-num">02</span>
-              <span class="arch-name">Cast Off</span>
-              <span class="arch-meta">Session · 2020</span>
-            </div>
+        <!-- ONGOING / ENSEMBLE — image left, text right -->
+        <div class="arch-row">
+          <div class="arch-card">
+            <div class="arch-placeholder"></div>
           </div>
-
-          <div class="media-card">
-            <div class="embed-yt">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/owZCDZ67Aos?si=U6JUE5sfgeKK222L"
-                title="YouTube video player"
-                frameborder="0"
-                allow="
-                  accelerometer;
-                  autoplay;
-                  clipboard-write;
-                  encrypted-media;
-                  gyroscope;
-                  picture-in-picture;
-                  web-share;
-                "
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div class="card-meta">
-              <span class="arch-num">03</span>
-              <span class="arch-name">Batalá New York</span>
-              <span class="arch-meta">Surdo · 2021</span>
-            </div>
-          </div>
-
-          <div class="media-card">
-            <div class="embed-audio">
-              <div class="embed-audio">
-                <iframe
-                  width="100%"
-                  height="315"
-                  scrolling="no"
-                  frameborder="no"
-                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A786894469&color=%238c7176&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-                  loading="lazy"
-                  title="Happiness by Perl"
-                ></iframe>
-              </div>
-              <div
-                style="
-                  font-size: 10px;
-                  color: #cccccc;
-                  line-break: anywhere;
-                  word-break: normal;
-                  overflow: hidden;
-                  white-space: nowrap;
-                  text-overflow: ellipsis;
-                  font-family:
-                    Interstate,
-                    Lucida Grande,
-                    Lucida Sans Unicode,
-                    Lucida Sans,
-                    Garuda,
-                    Verdana,
-                    Tahoma,
-                    sans-serif;
-                  font-weight: 100;
-                "
-              >
-                <a
-                  href="https://soundcloud.com/perlmusic"
-                  title="Perl"
-                  target="_blank"
-                  style="color: #cccccc; text-decoration: none"
-                  >Perl</a
+          <div class="arch-text">
+            <div class="arch-year">Ongoing</div>
+            <ul class="arch-links">
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
                 >
-                ·
-                <a
-                  href="https://soundcloud.com/perlmusic/01-happiness"
-                  title="Happiness"
-                  target="_blank"
-                  style="color: #cccccc; text-decoration: none"
-                  >Happiness</a
+              </li>
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
                 >
-              </div>
-            </div>
-            <div class="card-meta">
-              <span class="arch-num">04</span>
-              <span class="arch-name">Happiness</span>
-              <span class="arch-meta">Perl · 2021</span>
-            </div>
-          </div>
-
-          <div class="media-card">
-            <div class="thumb-placeholder">↳ Video / embed</div>
-            <div class="card-meta">
-              <span class="arch-num">05</span>
-              <span class="arch-name">Project name</span>
-              <span class="arch-meta">Role · Year</span>
-            </div>
-          </div>
-
-          <div class="media-card">
-            <div class="thumb-placeholder">↳ Video / embed</div>
-            <div class="card-meta">
-              <span class="arch-num">06</span>
-              <span class="arch-name">Project name</span>
-              <span class="arch-meta">Role · Year</span>
-            </div>
+              </li>
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
+                >
+              </li>
+            </ul>
           </div>
         </div>
+
+        <!-- 2026 — text left, image right -->
+        <div class="arch-row arch-row--flip">
+          <div class="arch-text">
+            <div class="arch-year">2026</div>
+            <ul class="arch-links">
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="arch-card">
+            <div class="arch-placeholder"></div>
+          </div>
+        </div>
+
+        <!-- 2025 — image left, text right -->
+        <div class="arch-row">
+          <div class="arch-card">
+            <div class="arch-placeholder"></div>
+          </div>
+          <div class="arch-text">
+            <div class="arch-year">2025</div>
+            <ul class="arch-links">
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 2020 — text left, image right -->
+        <div class="arch-row arch-row--flip">
+          <div class="arch-text">
+            <div class="arch-year">2020</div>
+            <ul class="arch-links">
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="arch-card">
+            <div class="arch-placeholder"></div>
+          </div>
+        </div>
+
+        <!-- 2019 — image left, text right -->
+        <div class="arch-row">
+          <div class="arch-card">
+            <div class="arch-placeholder"></div>
+          </div>
+          <div class="arch-text">
+            <div class="arch-year">2019</div>
+            <ul class="arch-links">
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 2018 — text left, image right -->
+        <div class="arch-row arch-row--flip">
+          <div class="arch-text">
+            <div class="arch-year">2018</div>
+            <ul class="arch-links">
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="arch-card">
+            <div class="arch-placeholder"></div>
+          </div>
+        </div>
+
+        <!-- 2015 — image left, text right -->
+        <div class="arch-row">
+          <div class="arch-card">
+            <div class="arch-placeholder"></div>
+          </div>
+          <div class="arch-text">
+            <div class="arch-year">2015</div>
+            <ul class="arch-links">
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Link title <span class="arch-platform">Platform</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <p class="archive-note">
           albums · session work · scoring · collaborations · ongoing
         </p>
