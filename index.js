@@ -40,5 +40,7 @@ if (hamburger && mobileMenu) {
     });
   });
 }
-document.querySelector(".footer-copy").textContent =
-  "© " + new Date().getFullYear();
+const footerCopy = document.querySelector(".footer-copy");
+if (footerCopy) {
+  footerCopy.textContent = "© " + new Date().getFullYear();
+}
