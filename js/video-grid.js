@@ -1,7 +1,49 @@
-// js/video-grid.js
 (() => {
   const grids = document.querySelectorAll(".video-grid");
   if (!grids.length) return;
+
+  const modal = document.getElementById("video-modal");
+  const modalFrame = modal ? modal.querySelector(".video-modal-frame") : null;
+
+  function openModal(type, videoId, embedSrc) {
+    if (!modal || !modalFrame) return;
+
+    modalFrame.innerHTML = ""; // clear any leftover iframe before adding a new one
+
+    const iframe = document.createElement("iframe");
+
+    if (type === "bandcamp") {
+      iframe.src = embedSrc;
+      iframe.style.border = "0";
+      iframe.setAttribute("seamless", "");
+    } else {
+      iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+      iframe.allow =
+        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+      iframe.allowFullscreen = true;
+    }
+
+    modalFrame.appendChild(iframe);
+    modal.hidden = false;
+  }
+
+  function closeModal() {
+    if (!modal || !modalFrame) return;
+    modalFrame.innerHTML = "";
+    modal.hidden = true;
+  }
+
+  if (modal) {
+    modal
+      .querySelector(".video-modal-close")
+      ?.addEventListener("click", closeModal);
+    modal
+      .querySelector(".video-modal-backdrop")
+      ?.addEventListener("click", closeModal);
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !modal.hidden) closeModal();
+    });
+  }
 
   grids.forEach((grid) => {
     const tiles = grid.querySelectorAll(".video-tile");
@@ -43,28 +85,9 @@
         tile.appendChild(captionEl);
       }
 
-      media.addEventListener(
-        "click",
-        () => {
-          const iframe = document.createElement("iframe");
-
-          if (type === "bandcamp") {
-            iframe.src = embedSrc;
-            iframe.style.border = "0";
-            iframe.setAttribute("seamless", "");
-          } else {
-            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-            iframe.allow =
-              "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
-            iframe.allowFullscreen = true;
-          }
-
-          media.innerHTML = "";
-          media.appendChild(iframe);
-          media.style.cursor = "default";
-        },
-        { once: true },
-      );
+      media.addEventListener("click", () => {
+        openModal(type, videoId, embedSrc);
+      });
     });
   });
 })();
