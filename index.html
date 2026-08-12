@@ -14,6 +14,11 @@
   </head>
   <body>
     <div class="bg-overlay"></div>
+    <div class="binder-holes" aria-hidden="true">
+      <span class="hole"></span>
+      <span class="hole"></span>
+      <span class="hole"></span>
+    </div>
     <!-- MOBILE NAV -->
 
     <nav class="mobile-nav" aria-label="Mobile navigation">
@@ -81,7 +86,11 @@
 
       <section id="featured">
         <div class="sec-num">01 · Featured</div>
-        <div class="sec-h sec-h--featured">Featured</div>
+        <div class="tape-wrap">
+          <div class="tape-shadow-wrap">
+            <div class="sec-h sec-h--featured">Featured</div>
+          </div>
+        </div>
 
         <!-- Hero embed -->
         <div class="player-box">
@@ -98,7 +107,11 @@
 
       <section id="work">
         <div class="sec-num">02 · Work</div>
-        <div class="sec-h">Work</div>
+        <div class="tape-wrap">
+          <div class="tape-shadow-wrap">
+            <div class="sec-h sec-h--work">Work</div>
+          </div>
+        </div>
         <p class="work-intro">
           So I was thinking of having a featured project for the year section
           and then links to related projects for that year.
@@ -160,6 +173,7 @@
             <div class="video-thumb"></div>
             <button class="video-play" aria-label="Play video">&#9658;</button>
           </div>
+          <div class="sec-h">2019</div>
           <div
             class="video-tile"
             data-video-id="WF9m3VF-dME"
@@ -176,8 +190,7 @@
             <div class="video-thumb"></div>
             <button class="video-play" aria-label="Play video">&#9658;</button>
           </div>
-
-          <div class="sec-h">2019</div>
+          <div class="sec-h">2020</div>
           <div
             class="video-tile"
             data-video-id="ZD96HE16SZE"
@@ -194,7 +207,6 @@
             <div class="video-thumb"></div>
             <button class="video-play" aria-label="Play video">&#9658;</button>
           </div>
-          <div class="sec-h">2020</div>
 
           <div
             class="video-tile"
@@ -274,24 +286,6 @@
               M2S2C (Myself Two Seconds to Cry)
               <span class="sec-h-date">2025-Present</span>
             </div>
-          </div>
-        </div>
-
-        <p>Maybe a blurb about the project and your role in the project.</p>
-        <div class="work-featured">
-          <iframe
-            style="border: 0; width: 350px; height: 470px"
-            src="https://bandcamp.com/EmbeddedPlayer/album=1534509002/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
-            seamless
-            ><a href="https://music.nehedar.com/album/escaping-zion"
-              >Escaping Zion by Nehedar</a
-            ></iframe
-          >
-          <div class="work-featured-caption">
-            <!-- Title, year, description -- whatever you want next to the featured piece -->
-            <h2>Do you want to feature a specific project?</h2>
-            Description of the work goes here. This is a placeholder for now. It
-            can be a few sentences long, or a paragraph, or whatever you want.
           </div>
         </div>
 
@@ -431,7 +425,7 @@
             <button class="video-play" aria-label="Play video">&#9658;</button>
           </div>
         </div>
-        <!-- BATALA & MAMBEMBE MAIN-->
+        <!-- SIGNAL PROBLEMS MAIN-->
         <div class="tape-wrap">
           <div class="tape-shadow-wrap">
             <div class="sec-h-subheader">
@@ -458,7 +452,12 @@
 
       <section id="about">
         <div class="sec-num">03 · About</div>
-        <div class="sec-h sec-h--about">About</div>
+        <div class="tape-wrap">
+          <div class="tape-shadow-wrap">
+            <div class="sec-h sec-h--about">About</div>
+          </div>
+        </div>
+
         <div class="about-grid">
           <div class="bio-block">
             Bio goes here — a few sentences or a paragraph about you, your work,
@@ -482,7 +481,11 @@
 
       <section id="book">
         <div class="sec-num">04 · Get in touch</div>
-        <div class="sec-h sec-h--book">Get in touch</div>
+        <div class="tape-wrap">
+          <div class="tape-shadow-wrap">
+            <div class="sec-h sec-h--book">Get in touch</div>
+          </div>
+        </div>
         <div class="book-grid">
           <form action="https://formspree.io/f/xaqkolqd" method="POST">
             <div class="field">
@@ -522,7 +525,13 @@
               name="inquiry_type"
               value="Performance · Booking"
             />
-            <button class="send-btn" type="submit">Send it</button>
+            <div class="tape-wrap">
+              <div class="tape-shadow-wrap">
+                <button class="send-btn tape-mask" type="submit">
+                  Send it
+                </button>
+              </div>
+            </div>
           </form>
           <div>
             <span class="inq-label">What's this about?</span>
@@ -549,6 +558,7 @@
         <div class="video-modal-frame"></div>
       </div>
     </div>
+    <script src="js/index.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/inquiry-form.js"></script>
     <script src="js/footer.js"></script>
