@@ -73,40 +73,7 @@ body::after {
   z-index: -1;
   pointer-events: none;
 }
-.binder-holes {
-  position: fixed;
-  left: 24px;
-  top: 0;
-  bottom: 0;
-  width: 0;
-  transform: translateX(-50%);
-  z-index: -1;
-  pointer-events: none;
-}
-.hole {
-  position: absolute;
-  left: 0;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  transform: translateX(-50%, -50%);
-  background: #dfc8ac;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
-}
-.hole:nth-child(1) {
-  top: 12%;
-}
-.hole:nth-child(2) {
-  top: 50%;
-}
-.hole:nth-child(3) {
-  top: 88%;
-}
-@media (max-width: 768px) {
-  .binder-holes {
-    display: none;
-  }
-}
+
 .site-name {
   position: fixed;
   left: 10px;
@@ -1054,6 +1021,10 @@ footer {
   align-items: center;
   gap: 1.5rem;
   margin-bottom: 2.5rem;
+  margin-top: 1.5rem;
+  box-shadow:
+    0 1px 2px rgba(44, 40, 32, 0.2),
+    0 6px 14px rgba(44, 40, 32, 0.22);
 }
 
 .work-featured iframe {
@@ -1074,36 +1045,26 @@ footer {
 }
 
 /* ===== Video Grid (smaller tiles, in a row below the featured block) ===== */
+
 .video-grid {
   --grid-gap: 1.25rem;
-  /* sample background designs - classic ruled paper */
-  /* background-color: #fdfaf3;
-  background-image:
-    linear-gradient(
-      90deg,
-      transparent 39px,
-      #e8b4b4 39px,
-      #e8b4b4 41px,
-      transparent 41px
-    ),
-    repeating-linear-gradient(#fdfaf3, #fdfaf3 27px, #cfd8e3 28px);
-  padding: 1.5rem 1.5rem 1.5rem 3.5rem;
-  border-radius: 2px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); */
-  /* end sample background designs */
+
   /* sample background design - 2 grid paper */
   background-color: #f5e8c9;
   background-image:
     linear-gradient(#e0dcc8 1px, transparent 1px),
     linear-gradient(90deg, #e0dcc8 1px, transparent 1px);
   background-size: 24px 24px;
-  padding: 1rem 1.25rem 2rem;
+  /* end sample background designs - 2 grid paper */
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--grid-gap);
-  padding: 1rem 1rem 2rem;
-  /* end sample background designs - 2 grid paper */
+  padding: 1rem 1.25rem 2rem;
+
+  box-shadow:
+    0 1px 2px rgba(44, 40, 32, 0.2),
+    0 8px 20px rgba(44, 40, 32, 0.22);
 }
 
 @media (max-width: 900px) {
@@ -1131,7 +1092,30 @@ footer {
   border-radius: 4px;
   background: #000;
 }
+.video-media {
+  box-shadow:
+    0 1px 2px rgba(44, 40, 32, 0.2),
+    0 6px 14px rgba(44, 40, 32, 0.22);
+  transition:
+    box-shadow 0.25s,
+    transform 0.25s;
+}
 
+.video-tile:hover .video-media {
+  transform: translateY(-2px);
+  box-shadow:
+    0 2px 4px rgba(44, 40, 32, 0.2),
+    0 12px 24px rgba(44, 40, 32, 0.28);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .video-media {
+    transition: none;
+  }
+  .video-tile:hover .video-media {
+    transform: none;
+  }
+}
 .video-thumb {
   position: absolute;
   inset: 0;

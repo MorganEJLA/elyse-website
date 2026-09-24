@@ -5,22 +5,26 @@
   const modal = document.getElementById("video-modal");
   const modalFrame = modal ? modal.querySelector(".video-modal-frame") : null;
 
+  // Types that use a pre-built embed URL instead of a video ID
+  const EMBED_TYPES = ["bandcamp", "soundcloud"];
+
   function openModal(type, videoId, embedSrc) {
     if (!modal || !modalFrame) return;
 
-    modalFrame.innerHTML = ""; // clear any leftover iframe before adding a new one
+    modalFrame.innerHTML = "";
 
     const iframe = document.createElement("iframe");
 
-    if (type === "bandcamp") {
-      iframe.src = embedSrc;
-      iframe.style.border = "0";
-      iframe.setAttribute("seamless", "");
-    } else {
+    if (type === "youtube") {
       iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
       iframe.allow =
         "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
       iframe.allowFullscreen = true;
+    } else {
+      iframe.src = embedSrc;
+      iframe.style.border = "0";
+      iframe.allow = "autoplay";
+      if (type === "bandcamp") iframe.setAttribute("seamless", "");
     }
 
     modalFrame.appendChild(iframe);
@@ -49,24 +53,26 @@
     const tiles = grid.querySelectorAll(".video-tile");
 
     tiles.forEach((tile) => {
-      const type = tile.dataset.type || "youtube"; // default keeps old behavior untouched
+      const type = tile.dataset.type || "youtube";
+      const isEmbed = EMBED_TYPES.includes(type);
       const videoId = tile.dataset.videoId;
       const embedSrc = tile.dataset.embedSrc;
       const thumbUrl = tile.dataset.thumb;
       const caption = tile.dataset.caption;
 
       if (type === "youtube" && !videoId) return;
-      if (type === "bandcamp" && !embedSrc) return;
+      if (isEmbed && !embedSrc) return;
 
       const media = document.createElement("div");
       media.className = "video-media";
 
       const thumb = document.createElement("div");
       thumb.className = "video-thumb";
-      thumb.style.backgroundImage =
-        type === "bandcamp"
-          ? `url(${thumbUrl})`
-          : `url(https://img.youtube.com/vi/${videoId}/hqdefault.jpg)`;
+      if (isEmbed) {
+        if (thumbUrl) thumb.style.backgroundImage = `url("${thumbUrl}")`;
+      } else {
+        thumb.style.backgroundImage = `url(https://img.youtube.com/vi/${videoId}/hqdefault.jpg)`;
+      }
 
       const playBtn = document.createElement("button");
       playBtn.className = "video-play";
