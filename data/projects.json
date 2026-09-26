@@ -58,7 +58,7 @@
           {
             "type": "bandcamp",
             "embedSrc": "https://bandcamp.com/EmbeddedPlayer/album=1593096075/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/",
-            "thumb": "/img/light-at-the-end.png",
+            "thumb": "img/light-at-the-end.png",
             "caption": "Light at the End by Nehedar"
           },
           {
@@ -75,25 +75,25 @@
           {
             "type": "bandcamp",
             "embedSrc": "https://bandcamp.com/EmbeddedPlayer/album=3811160966/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/",
-            "thumb": "/img/nehedar-the-bound-world.png",
+            "thumb": "img/nehedar-the-bound-world.png",
             "caption": "Akudim by Nehedar"
           },
           {
             "type": "bandcamp",
             "embedSrc": "https://bandcamp.com/EmbeddedPlayer/album=260909018/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/",
-            "thumb": "/img/oh-syzygy.png",
+            "thumb": "img/oh-syzygy.png",
             "caption": "Oh Syzgy!"
           },
           {
             "type": "bandcamp",
             "embedSrc": "https://bandcamp.com/EmbeddedPlayer/album=1700491626/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/",
-            "thumb": "/img/amelioration-of-a-dream.png",
+            "thumb": "img/amelioration-of-a-dream.png",
             "caption": "The Amelioration of a Dream"
           },
           {
             "type": "bandcamp",
             "embedSrc": "https://bandcamp.com/EmbeddedPlayer/album=1181026313/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/",
-            "thumb": "/img/liminal-world.png",
+            "thumb": "img/liminal-world.png",
             "caption": "Liminal World"
           }
         ]
@@ -125,7 +125,7 @@
           {
             "type": "bandcamp",
             "embedSrc": "https://bandcamp.com/EmbeddedPlayer/album=1924158181/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/",
-            "thumb": "/img/spring-recitals.png",
+            "thumb": "img/spring-recitals.png",
             "caption": "Spring Recitals by M2S2C"
           }
         ]
