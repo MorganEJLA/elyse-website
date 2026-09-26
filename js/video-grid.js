@@ -1,4 +1,4 @@
-(() => {
+function initVideoGrids() {
   const grids = document.querySelectorAll(".video-grid");
   if (!grids.length) return;
 
@@ -96,4 +96,4 @@
       });
     });
   });
-})();
+}

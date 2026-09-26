@@ -1,0 +1,300 @@
+[
+  {
+    "name": "NEHADAR",
+    "date": "2018-Present",
+    "blocks": [
+      {
+        "kind": "text",
+        "text": "Maybe a blurb about the project and your role in the project."
+      },
+      {
+        "kind": "featured",
+        "embedSrc": "https://bandcamp.com/EmbeddedPlayer/album=1534509002/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/",
+        "linkUrl": "https://music.nehedar.com/album/escaping-zion",
+        "linkText": "Escaping Zion by Nehedar",
+        "title": "Escaping Zion - 2018",
+        "description": "Description of the work goes here. This is a placeholder for now. It can be a few sentences long, or a paragraph, or whatever you want."
+      },
+      {
+        "kind": "videoGrid",
+        "items": [
+          {
+            "type": "youtube",
+            "id": "by3o9wzB5yM",
+            "caption": "Nehedar Live at Niagara NYC 5-30-2018 - High Tide"
+          },
+          {
+            "type": "youtube",
+            "id": "bDAuCP4v7AE",
+            "caption": "Miss Thing - Live"
+          },
+          {
+            "type": "youtube",
+            "id": "csk4RFW6LNE",
+            "caption": "Nehedar Live 3/22/18"
+          },
+          { "type": "divider", "label": "2019" },
+          {
+            "type": "youtube",
+            "id": "WF9m3VF-dME",
+            "caption": "paralyzed live at coney island baby"
+          },
+          {
+            "type": "youtube",
+            "id": "RuQDb0YJ6mE",
+            "caption": "Nehedar Live at Niagara NYC 5-30-2018 - Pretty Young Thing"
+          },
+          { "type": "divider", "label": "2020" },
+          {
+            "type": "youtube",
+            "id": "ZD96HE16SZE",
+            "caption": "Monster (In My Head) Tiny Desk Contest Submission 2019"
+          },
+          {
+            "type": "youtube",
+            "id": "U2d1GbnG3uk",
+            "caption": "'How' Live at Niagara NYC 6/20/19 - Nehedar"
+          },
+          {
+            "type": "bandcamp",
+            "embedSrc": "https://bandcamp.com/EmbeddedPlayer/album=1593096075/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/",
+            "thumb": "/img/light-at-the-end.png",
+            "caption": "Light at the End by Nehedar"
+          },
+          {
+            "type": "youtube",
+            "id": "AfQhpOeHS3E",
+            "caption": "Nehedar - Light"
+          },
+          {
+            "type": "youtube",
+            "id": "1tAWAn0uY0k",
+            "caption": "Nehedar - Paywall"
+          },
+          { "type": "divider", "label": "2021" },
+          {
+            "type": "bandcamp",
+            "embedSrc": "https://bandcamp.com/EmbeddedPlayer/album=3811160966/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/",
+            "thumb": "/img/nehedar-the-bound-world.png",
+            "caption": "Akudim by Nehedar"
+          },
+          {
+            "type": "bandcamp",
+            "embedSrc": "https://bandcamp.com/EmbeddedPlayer/album=260909018/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/",
+            "thumb": "/img/oh-syzygy.png",
+            "caption": "Oh Syzgy!"
+          },
+          {
+            "type": "bandcamp",
+            "embedSrc": "https://bandcamp.com/EmbeddedPlayer/album=1700491626/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/",
+            "thumb": "/img/amelioration-of-a-dream.png",
+            "caption": "The Amelioration of a Dream"
+          },
+          {
+            "type": "bandcamp",
+            "embedSrc": "https://bandcamp.com/EmbeddedPlayer/album=1181026313/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/",
+            "thumb": "/img/liminal-world.png",
+            "caption": "Liminal World"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "M2S2C (Myself Two Seconds to Cry)",
+    "date": "2025-Present",
+    "blocks": [
+      {
+        "kind": "videoGrid",
+        "items": [
+          {
+            "type": "youtube",
+            "id": "H6huQMHEuOA",
+            "caption": "M2S2C_NYC_031825_REHEARSAL"
+          },
+          {
+            "type": "youtube",
+            "id": "bF9kd4aYvGg",
+            "caption": "M2S2C_NYC_031825_REHEARSAL"
+          },
+          {
+            "type": "youtube",
+            "id": "ldMzBNGa2cU",
+            "caption": "M2S2C_NYC_031825_REHEARSAL"
+          },
+          {
+            "type": "bandcamp",
+            "embedSrc": "https://bandcamp.com/EmbeddedPlayer/album=1924158181/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/",
+            "thumb": "/img/spring-recitals.png",
+            "caption": "Spring Recitals by M2S2C"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Modern Recordings Against Police Violence Jupiter Oak - \"La Complainte du Partisan\"",
+    "date": "2020",
+    "blocks": [
+      {
+        "kind": "text",
+        "text": "Maybe a blurb about the project and your role in the project."
+      },
+      {
+        "kind": "featured",
+        "embedSrc": "https://bandcamp.com/EmbeddedPlayer/album=784199610/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=1405894289/transparent=true/",
+        "linkUrl": "https://lapin.bandcamp.com/album/modern-recordings-against-police-violence",
+        "linkText": "Modern Recordings Against Police Violence by Various Artists",
+        "title": "Do you want to feature a specific project?",
+        "description": "Description of the work goes here. This is a placeholder for now. It can be a few sentences long, or a paragraph, or whatever you want."
+      }
+    ]
+  },
+  {
+    "name": "Perl",
+    "date": "2019",
+    "blocks": [
+      {
+        "kind": "text",
+        "text": "Maybe a blurb about the project and your role in the project."
+      },
+      {
+        "kind": "videoGrid",
+        "items": [
+          {
+            "type": "soundcloud",
+            "url": "https://soundcloud.com/perlmusic/sets/late-bloomer",
+            "thumb": "/img/perl-lateBloomer.png",
+            "caption": "Perl – Late Bloomer"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bulletproof Stockings",
+    "date": "2012 - 2016",
+    "blocks": [
+      {
+        "kind": "text",
+        "text": "Maybe a blurb about the project and your role in the project."
+      },
+      {
+        "kind": "videoGrid",
+        "items": [
+          {
+            "type": "soundcloud",
+            "url": "https://soundcloud.com/bulletproofstockings/sets/homeland-call-stomp",
+            "thumb": "/img/bulletproof-stockings.png",
+            "caption": "Bulletproof Stockings – Homeland Call Stomp"
+          },
+          {
+            "type": "youtube",
+            "id": "LAq7vh5Hq2s",
+            "caption": "Bulletproof Stockings - 6th and I - Dec. 8th 2015"
+          },
+          {
+            "type": "youtube",
+            "id": "f6NGXg1reAM",
+            "caption": "Bulletproof Stockings pefroms at Sixth & I Historic Synagogue, 2015"
+          },
+          {
+            "type": "youtube",
+            "id": "XMB0qBqbrLI",
+            "caption": "Bulletproof Stockings Hasidic Women Band Concert"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Batalá & Mambembe",
+    "date": "2022-Present",
+    "blocks": [
+      {
+        "kind": "text",
+        "text": "Maybe a blurb about the project and your role in the project."
+      },
+      {
+        "kind": "videoGrid",
+        "items": [
+          {
+            "type": "youtube",
+            "id": "FFFC12o1Jrk",
+            "caption": "Batalá NYC - Sunset on the Hudson"
+          },
+          {
+            "type": "youtube",
+            "id": "amjD7s1-JyY",
+            "caption": "Mambembé House of Yes - 2025"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Jalopy Chorus",
+    "date": "2022-Present",
+    "blocks": [
+      {
+        "kind": "text",
+        "text": "Maybe a blurb about the project and your role in the project."
+      },
+      {
+        "kind": "videoGrid",
+        "items": [
+          {
+            "type": "youtube",
+            "id": "riv5cSMd0I4",
+            "caption": "Lincoln Center NYC YOUR VOICES a kinetic sculpture by ES DEVLIN Christmas Tree Lighting New York NY"
+          },
+          {
+            "type": "youtube",
+            "id": "NOwUp5n36CQ",
+            "caption": "The Loneliness of Either, Or:"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Signal Problems",
+    "date": "2019",
+    "blocks": [
+      {
+        "kind": "text",
+        "text": "Maybe a blurb about the project and your role in the project."
+      },
+      {
+        "kind": "videoGrid",
+        "items": [
+          {
+            "type": "youtube",
+            "id": "PYAQcBiXNho",
+            "caption": "Signal Problems - Topic"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MISC",
+    "date": "2019",
+    "blocks": [
+      {
+        "kind": "text",
+        "text": "This cound be a section for one off projects"
+      },
+      {
+        "kind": "videoGrid",
+        "items": [
+          {
+            "type": "youtube",
+            "id": "PYAQcBiXNho",
+            "caption": "Signal Problems - Topic"
+          }
+        ]
+      }
+    ]
+  }
+]
