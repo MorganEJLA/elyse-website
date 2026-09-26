@@ -164,7 +164,7 @@
           {
             "type": "soundcloud",
             "url": "https://soundcloud.com/perlmusic/sets/late-bloomer",
-            "thumb": "/img/perl-lateBloomer.png",
+            "thumb": "img/perl-lateBloomer.png",
             "caption": "Perl – Late Bloomer"
           }
         ]
@@ -185,7 +185,7 @@
           {
             "type": "soundcloud",
             "url": "https://soundcloud.com/bulletproofstockings/sets/homeland-call-stomp",
-            "thumb": "/img/bulletproof-stockings.png",
+            "thumb": "img/bulletproof-stockings.png",
             "caption": "Bulletproof Stockings – Homeland Call Stomp"
           },
           {
